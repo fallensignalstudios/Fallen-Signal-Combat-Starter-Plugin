@@ -1,0 +1,58 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "GAS Combat Starter",
+	"Description": "A clean, focused Gameplay Ability System combat baseline for action/RPG projects. Provides attribute sets, a combat-oriented ability system component, base melee/projectile/block abilities, a combat state component, and character integration scaffolding. Not a full RPG framework -- a shippable starting point you extend for your own game.",
+	"Category": "Gameplay",
+	"CreatedBy": "Fallen Signal Studios",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.4.0",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "GASCombatStarter",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Linux",
+				"Mac",
+				"PS5",
+				"XSX",
+				"Android",
+				"IOS"
+			]
+		},
+		{
+			"Name": "GASCombatStarterEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Linux",
+				"Mac"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "GameplayAbilities",
+			"Enabled": true
+		},
+		{
+			"Name": "GameplayTags",
+			"Enabled": true
+		},
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
+		}
+	]
+}
