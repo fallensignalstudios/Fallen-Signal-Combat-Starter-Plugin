@@ -23,7 +23,12 @@ public class GASCombatStarter : ModuleRules
 		{
 			"Slate",
 			"SlateCore",
-			"NetCore"
+			"NetCore",
+
+			// Required by UGCSGameplayCueNotify_HitImpact, which calls
+			// UNiagaraFunctionLibrary::SpawnSystemAtLocation to spawn hit-impact
+			// VFX (see Source/GASCombatStarter/Private/GameplayCues/GCSGameplayCueNotify_HitImpact.cpp).
+			"Niagara"
 		});
 
 		// NOTE ON AbilitySystemGlobals:
